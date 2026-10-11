@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psyche &amp; Cycle — Menstrual &amp; Mental Health Nonprofit | NJ, NY &amp; PA</title>
+  <meta name="description" content="Psyche &amp; Cycle is a student-led menstrual and mental health nonprofit operating across college campuses in New Jersey, New York, and Pennsylvania. Mind, Body, Cycle.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation: sticky header with desktop links and mobile hamburger menu -->
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav__brand" href="#top">Psyche &amp; Cycle</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+        <span class="nav__toggle-bar" aria-hidden="true"></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#our-work">Our Work</a></li>
+        <li><a href="#disorders">Disorders</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a class="nav__cta" href="#about">Get Involved</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero: brand-forward intro with CTAs and campus period-poverty stat -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero__media">
+        <picture>
+          <source srcset="images/flatlay.webp" type="image/webp">
+          <img src="images/flatlay.jpg" alt="Flat-lay photo of a journal, pad, glasses and lip gloss on a wooden desk" width="1024" height="572">
+        </picture>
+      </div>
+      <div class="hero__content">
+        <p class="eyebrow">Women's Health · College Campuses</p>
+        <p class="hero__brand">Psyche &amp; Cycle</p>
+        <h1 id="hero-heading">Where the Mind Meets the Cycle</h1>
+        <p class="hero__text">A student-led space for education, community, and advocacy at the intersection of menstrual and mental health. Operating across three university campuses.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#about">Get Involved</a>
+          <a class="btn btn--secondary" href="#blog">Read the Blog</a>
+        </div>
+        <p class="hero__stat"><strong>1 in 4</strong> college students experience period poverty</p>
+      </div>
+    </section>
+
+    <!-- Interactive Photo Explorer: glowing dots open dialogs on desktop; cards on mobile -->
+    <section class="explorer" id="explore" aria-labelledby="explorer-heading">
+      <div class="section-inner">
+        <h2 id="explorer-heading" class="visually-hidden">Explore Psyche &amp; Cycle</h2>
+
+        <!-- Desktop / tablet interactive image -->
+        <div class="explorer__stage" data-explorer-stage>
+          <picture>
+            <source srcset="images/flatlay.webp" type="image/webp">
+            <img class="explorer__image" src="images/flatlay.jpg" alt="Flat-lay photo of a journal, pad, glasses and lip gloss on a wooden desk" width="1024" height="572">
+          </picture>
+          <p class="explorer__caption">Click the glowing dots to explore</p>
+
+          <button class="hotspot" type="button" style="--x: 34%; --y: 48%;" data-hotspot="cycle" aria-haspopup="dialog" aria-controls="popup-cycle">
+            <span class="visually-hidden">Cycle — Reproductive &amp; Menstrual Health</span>
+          </button>
+          <button class="hotspot" type="button" style="--x: 56%; --y: 58%;" data-hotspot="psyche" aria-haspopup="dialog" aria-controls="popup-psyche">
+            <span class="visually-hidden">Psyche — Mental Health &amp; Self-Reflection</span>
+          </button>
+          <button class="hotspot" type="button" style="--x: 74%; --y: 30%;" data-hotspot="advocacy" aria-haspopup="dialog" aria-controls="popup-advocacy">
+            <span class="visually-hidden">Advocacy — Education &amp; Campus Data</span>
+          </button>
+          <button class="hotspot" type="button" style="--x: 76%; --y: 50%;" data-hotspot="community" aria-haspopup="dialog" aria-controls="popup-community">
+            <span class="visually-hidden">Community — Wellness &amp; Campus Life</span>
+          </button>
+        </div>
+
+        <!-- Mobile card layout (shown below tablet breakpoint) -->
+        <div class="explorer__cards" data-explorer-cards>
+          <article class="explorer-card">
+            <h3>🩸 Cycle — Reproductive &amp; Menstrual Health</h3>
+            <p>Menstrual health is more than a monthly inconvenience. It's a window into systemic health, mental state, and quality of life — and many conditions remain dramatically underfunded.</p>
+            <ul>
+              <li><strong>PMDD:</strong> Affects 3-8% of people who menstruate. Cyclical, severe emotional and physical symptoms during the luteal phase. Frequently misdiagnosed as bipolar disorder or generalized depression.</li>
+              <li><strong>Endometriosis:</strong> Affects 1 in 10 people who menstruate. Average time to diagnosis: 7 to 10 years. Pain often dismissed as "bad periods" by clinicians.</li>
+              <li><strong>Adenomyosis:</strong> The uterine lining grows into the muscle wall. Causes heavy bleeding, severe cramping, and chronic pelvic pain. Heavily underresearched.</li>
+            </ul>
+            <p><a href="https://iapmd.org" target="_blank" rel="noopener noreferrer">IAPMD Resources</a></p>
+          </article>
+
+          <article class="explorer-card">
+            <h3>📓 Psyche — Mental Health &amp; Self-Reflection</h3>
+            <p>The link between hormonal fluctuations and mental health is real, documented, and still largely absent from how we teach college students to understand their own minds.</p>
+            <p>Cycle phases:</p>
+            <ul>
+              <li><strong>Menstrual:</strong> Rest, reflection, lower energy. Estrogen and progesterone are at their lowest.</li>
+              <li><strong>Follicular:</strong> Rising estrogen = sharper cognition, more social energy, better mood.</li>
+              <li><strong>Ovulatory:</strong> Peak estrogen and LH surge. Many people report highest confidence and communication clarity.</li>
+              <li><strong>Luteal:</strong> Progesterone rises, then crashes. Anxiety, irritability, and sleep disruption are common. PMDD symptoms peak here.</li>
+            </ul>
+            <p>The Psyche &amp; Cycle Podcast covers these intersections in depth. Find us on Spotify.</p>
+          </article>
+
+          <article class="explorer-card">
+            <h3>👓 Advocacy — Education &amp; Campus Data</h3>
+            <p>Research, campus chapters, conference presentations, and how to get involved. We operate across three universities and take our findings seriously.</p>
+            <p>Our chapter operates across three university campuses. Each location brings a different campus culture and resource landscape. Together, we share research, run advocacy campaigns, and build curriculum.</p>
+            <ul>
+              <li><strong>Pitt Chapter:</strong> Hosted PMDD informational sessions and pre/post surveys measuring stigma reduction.</li>
+              <li><strong>Rutgers Chapter:</strong> Partnered with campus health services for period product distribution.</li>
+              <li><strong>NJIT Chapter:</strong> Led digital advocacy campaigns and research presentations.</li>
+            </ul>
+            <h4>Awards &amp; Recognition</h4>
+            <ul>
+              <li>1st Place, PA HOSA State Conference — Mental Health Promotion</li>
+              <li>5th Place, HOSA International Conference (Houston, TX) — 85 teams</li>
+            </ul>
+          </article>
+
+          <article class="explorer-card">
+            <h3>💄 Community — Wellness &amp; Campus Life</h3>
+            <p>Events, product drives, playlists, and what it looks like to actually show up for each other. This is what community looks like in practice.</p>
+            <p>Psyche &amp; Cycle is student-led, which means everything we do has to actually work for students. These are our active community programs.</p>
+            <ul>
+              <li><strong>Period Product Drive:</strong> 200+ products collected and donated via I Support the Girls.</li>
+              <li><strong>The Sticky Note Project:</strong> Campus-wide initiative distributing handwritten uplifting messages during Mental Health Awareness Month.</li>
+              <li><strong>Yoga for Cramping Relief:</strong> Therapeutic group session with breathwork and gentle stretches for menstrual pain.</li>
+              <li><strong>The P&amp;C Podcast:</strong> Spotify show with healthcare professionals and community stories. Dropping new episodes soon.</li>
+              <li><strong>Luteal Phase Playlist:</strong> A curated Spotify playlist for the week before your period. Science-backed, mood-aware.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+
+      <!-- Dialog pop-ups for hotspot content (keyboard-accessible) -->
+      <dialog class="popup" id="popup-cycle" aria-labelledby="popup-cycle-title">
+        <div class="popup__inner">
+          <button class="popup__close" type="button" aria-label="Close dialog">&times;</button>
+          <h3 id="popup-cycle-title">🩸 Cycle — Reproductive &amp; Menstrual Health</h3>
+          <p>Menstrual health is more than a monthly inconvenience. It's a window into systemic health, mental state, and quality of life — and many conditions remain dramatically underfunded.</p>
+          <ul>
+            <li><strong>PMDD:</strong> Affects 3-8% of people who menstruate. Cyclical, severe emotional and physical symptoms during the luteal phase. Frequently misdiagnosed as bipolar disorder or generalized depression.</li>
+            <li><strong>Endometriosis:</strong> Affects 1 in 10 people who menstruate. Average time to diagnosis: 7 to 10 years. Pain often dismissed as "bad periods" by clinicians.</li>
+            <li><strong>Adenomyosis:</strong> The uterine lining grows into the muscle wall. Causes heavy bleeding, severe cramping, and chronic pelvic pain. Heavily underresearched.</li>
+          </ul>
+          <p><a href="https://iapmd.org" target="_blank" rel="noopener noreferrer">IAPMD Resources</a></p>
+        </div>
+      </dialog>
+
+      <dialog class="popup" id="popup-psyche" aria-labelledby="popup-psyche-title">
+        <div class="popup__inner">
+          <button class="popup__close" type="button" aria-label="Close dialog">&times;</button>
+          <h3 id="popup-psyche-title">📓 Psyche — Mental Health &amp; Self-Reflection</h3>
+          <p>The link between hormonal fluctuations and mental health is real, documented, and still largely absent from how we teach college students to understand their own minds.</p>
+          <p>Cycle phases:</p>
+          <ul>
+            <li><strong>Menstrual:</strong> Rest, reflection, lower energy. Estrogen and progesterone are at their lowest.</li>
+            <li><strong>Follicular:</strong> Rising estrogen = sharper cognition, more social energy, better mood.</li>
+            <li><strong>Ovulatory:</strong> Peak estrogen and LH surge. Many people report highest confidence and communication clarity.</li>
+            <li><strong>Luteal:</strong> Progesterone rises, then crashes. Anxiety, irritability, and sleep disruption are common. PMDD symptoms peak here.</li>
+          </ul>
+          <p>The Psyche &amp; Cycle Podcast covers these intersections in depth. Find us on Spotify.</p>
+        </div>
+      </dialog>
+
+      <dialog class="popup" id="popup-advocacy" aria-labelledby="popup-advocacy-title">
+        <div class="popup__inner">
+          <button class="popup__close" type="button" aria-label="Close dialog">&times;</button>
+          <h3 id="popup-advocacy-title">👓 Advocacy — Education &amp; Campus Data</h3>
+          <p>Research, campus chapters, conference presentations, and how to get involved. We operate across three universities and take our findings seriously.</p>
+          <p>Our chapter operates across three university campuses. Each location brings a different campus culture and resource landscape. Together, we share research, run advocacy campaigns, and build curriculum.</p>
+          <ul>
+            <li><strong>Pitt Chapter:</strong> Hosted PMDD informational sessions and pre/post surveys measuring stigma reduction.</li>
+            <li><strong>Rutgers Chapter:</strong> Partnered with campus health services for period product distribution.</li>
+            <li><strong>NJIT Chapter:</strong> Led digital advocacy campaigns and research presentations.</li>
+          </ul>
+          <h4>Awards &amp; Recognition</h4>
+          <ul>
+            <li>1st Place, PA HOSA State Conference — Mental Health Promotion</li>
+            <li>5th Place, HOSA International Conference (Houston, TX) — 85 teams</li>
+          </ul>
+        </div>
+      </dialog>
+
+      <dialog class="popup" id="popup-community" aria-labelledby="popup-community-title">
+        <div class="popup__inner">
+          <button class="popup__close" type="button" aria-label="Close dialog">&times;</button>
+          <h3 id="popup-community-title">💄 Community — Wellness &amp; Campus Life</h3>
+          <p>Events, product drives, playlists, and what it looks like to actually show up for each other. This is what community looks like in practice.</p>
+          <p>Psyche &amp; Cycle is student-led, which means everything we do has to actually work for students. These are our active community programs.</p>
+          <ul>
+            <li><strong>Period Product Drive:</strong> 200+ products collected and donated via I Support the Girls.</li>
+            <li><strong>The Sticky Note Project:</strong> Campus-wide initiative distributing handwritten uplifting messages during Mental Health Awareness Month.</li>
+            <li><strong>Yoga for Cramping Relief:</strong> Therapeutic group session with breathwork and gentle stretches for menstrual pain.</li>
+            <li><strong>The P&amp;C Podcast:</strong> Spotify show with healthcare professionals and community stories. Dropping new episodes soon.</li>
+            <li><strong>Luteal Phase Playlist:</strong> A curated Spotify playlist for the week before your period. Science-backed, mood-aware.</li>
+          </ul>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- What We Do: three focus areas -->
+    <section class="what-we-do" id="what-we-do" aria-labelledby="what-we-do-heading">
+      <div class="section-inner">
+        <p class="eyebrow">Our Focus</p>
+        <h2 id="what-we-do-heading">What We Do</h2>
+        <ol class="focus-list">
+          <li>
+            <h3>Mental Health Education</h3>
+            <p>Research-backed resources and open conversations to destigmatize the emotional impact of hormonal fluctuations. We teach the cycle as a system, not a symptom.</p>
+          </li>
+          <li>
+            <h3>Community &amp; Safe Space</h3>
+            <p>Student-led spaces where shared experiences become the curriculum. We know isolation is part of chronic health struggles. We build the opposite.</p>
+          </li>
+          <li>
+            <h3>Menstrual Rights Advocacy</h3>
+            <p>Fighting period poverty and pushing for systemic change in access to menstrual care. Because health equity starts with the basics.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Our Work: highlights of past programs and recognition -->
+    <section class="our-work" id="our-work" aria-labelledby="our-work-heading">
+      <div class="section-inner">
+        <p class="eyebrow">What We've Done</p>
+        <h2 id="our-work-heading">Our Work</h2>
+        <ul class="work-list">
+          <li>
+            <h3>Period Product Drive</h3>
+            <p>200+ menstrual products collected and distributed via I Support the Girls. Directly fighting period poverty in our local community.</p>
+          </li>
+          <li>
+            <h3>PA HOSA State Conference</h3>
+            <p>1st place in Mental Health Promotion among 3,000+ students statewide. Our campaign linked menstrual and mental health in documented, measurable ways.</p>
+          </li>
+          <li>
+            <h3>HOSA International (Houston)</h3>
+            <p>5th place among 85 international teams. We brought our research and community data to a national audience and left with more conviction than when we arrived.</p>
+          </li>
+          <li>
+            <h3>The Sticky Note Project</h3>
+            <p>During Mental Health Awareness Month, we filled our campus with handwritten notes. Small, human, and something people actually remembered.</p>
+          </li>
+          <li>
+            <h3>PMDD Research Study</h3>
+            <p>Three educational sessions with pre/post surveys measuring shifts in awareness and stigma. The results showed real change.</p>
+          </li>
+          <li>
+            <h3>Yoga for Cramping Relief</h3>
+            <p>A therapeutic group session pairing breathwork and gentle stretches with clinical context. Not just wellness — education with a yoga mat.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Underresearched Disorders: PMDD, endometriosis, adenomyosis -->
+    <section class="disorders" id="disorders" aria-labelledby="disorders-heading">
+      <div class="section-inner">
+        <p class="eyebrow">Shedding Light</p>
+        <h2 id="disorders-heading">Underresearched Disorders</h2>
+        <div class="disorder-grid">
+          <article class="disorder">
+            <h3>PMDD — 3–8% of people who menstruate</h3>
+            <p>Unlike typical PMS, PMDD is a severe, chronic condition with emotional and physical symptoms that peak during the luteal phase. It is frequently misdiagnosed as bipolar disorder or depression because clinicians don't track cycles.</p>
+            <p><a href="https://iapmd.org" target="_blank" rel="noopener noreferrer">IAPMD.org</a></p>
+          </article>
+          <article class="disorder">
+            <h3>Endometriosis — 1 in 10 people who menstruate</h3>
+            <p>Tissue similar to the uterine lining grows outside the uterus. The average time to diagnosis is 7 to 10 years. Pain is routinely dismissed by clinicians as normal menstrual discomfort.</p>
+            <p><a href="https://www.endofound.org" target="_blank" rel="noopener noreferrer">Endofound.org</a></p>
+          </article>
+          <article class="disorder">
+            <h3>Adenomyosis — Severely underresearched</h3>
+            <p>The uterine lining grows into the muscle wall itself, causing heavy bleeding, severe cramping, and chronic pelvic pain. Many people with adenomyosis are told their symptoms are psychosomatic.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog: category filters, search, and preview cards -->
+    <section class="blog" id="blog" aria-labelledby="blog-heading">
+      <div class="section-inner">
+        <p class="eyebrow">Stories &amp; Research</p>
+        <h2 id="blog-heading">The Blog</h2>
+
+        <div class="blog__controls">
+          <div class="blog__filters" role="group" aria-label="Filter posts by category">
+            <button type="button" class="filter-btn is-active" data-filter="all">All</button>
+            <button type="button" class="filter-btn" data-filter="Physical Health">Physical Health</button>
+            <button type="button" class="filter-btn" data-filter="Mental Health">Mental Health</button>
+            <button type="button" class="filter-btn" data-filter="Advocacy">Advocacy</button>
+            <button type="button" class="filter-btn" data-filter="Resources">Resources</button>
+            <button type="button" class="filter-btn" data-filter="Campus Events">Campus Events</button>
+          </div>
+          <label class="blog__search">
+            <span class="visually-hidden">Search posts</span>
+            <input type="search" id="blog-search" placeholder="Search posts..." autocomplete="off">
+          </label>
+        </div>
+
+        <div class="blog__grid" id="blog-grid">
+          <article class="blog-card" data-category="Physical Health" data-title="The Luteal Phase and Why Your Brain Feels Different" data-excerpt="The week before your period isn't just physical. Estrogen drops, progesterone peaks, and your brain literally processes the world differently. Here's what that actually means for how you study, socialize, and sleep.">
+            <p class="blog-card__meta"><span class="blog-card__category">Physical Health</span> · <time datetime="2025-02-12">Feb 12, 2025</time> · 6 min</p>
+            <h3>The Luteal Phase and Why Your Brain Feels Different</h3>
+            <p>The week before your period isn't just physical. Estrogen drops, progesterone peaks, and your brain literally processes the world differently. Here's what that actually means for how you study, socialize, and sleep.</p>
+            <p class="blog-card__author">P&amp;C Team</p>
+          </article>
+
+          <article class="blog-card" data-category="Mental Health" data-title="PMDD Is Not 'Bad PMS.' Here's the Difference." data-excerpt="Premenstrual Dysphoric Disorder affects up to 8% of people who menstruate, yet most wait years for a diagnosis. We break down what sets it apart and why that gap exists.">
+            <p class="blog-card__meta"><span class="blog-card__category">Mental Health</span> · <time datetime="2025-01-28">Jan 28, 2025</time> · 8 min</p>
+            <h3>PMDD Is Not 'Bad PMS.' Here's the Difference.</h3>
+            <p>Premenstrual Dysphoric Disorder affects up to 8% of people who menstruate, yet most wait years for a diagnosis. We break down what sets it apart and why that gap exists.</p>
+            <p class="blog-card__author">P&amp;C Research Team</p>
+          </article>
+
+          <article class="blog-card" data-category="Advocacy" data-title="Period Poverty on College Campuses: What the Data Says" data-excerpt="One in four college students has missed class due to lack of access to period products. We surveyed students across our three campuses. The results were hard to sit with.">
+            <p class="blog-card__meta"><span class="blog-card__category">Advocacy</span> · <time datetime="2025-01-10">Jan 10, 2025</time> · 5 min</p>
+            <h3>Period Poverty on College Campuses: What the Data Says</h3>
+            <p>One in four college students has missed class due to lack of access to period products. We surveyed students across our three campuses. The results were hard to sit with.</p>
+            <p class="blog-card__author">P&amp;C Advocacy Leads</p>
+          </article>
+
+          <article class="blog-card" data-category="Resources" data-title="Talking to Your Doctor About Menstrual Health (When They Don't Listen)" data-excerpt="Women's pain has historically been minimized in clinical settings. These are concrete strategies, scripts, and questions to bring into your next appointment.">
+            <p class="blog-card__meta"><span class="blog-card__category">Resources</span> · <time datetime="2024-12-18">Dec 18, 2024</time> · 7 min</p>
+            <h3>Talking to Your Doctor About Menstrual Health (When They Don't Listen)</h3>
+            <p>Women's pain has historically been minimized in clinical settings. These are concrete strategies, scripts, and questions to bring into your next appointment.</p>
+            <p class="blog-card__author">P&amp;C Team</p>
+          </article>
+
+          <article class="blog-card" data-category="Mental Health" data-title="Why We Started a Playlist for the Luteal Phase" data-excerpt="Music and mood are linked in ways that are well-documented in research. When we curated our Spotify playlist, we weren't just picking songs. We were thinking about nervous system regulation.">
+            <p class="blog-card__meta"><span class="blog-card__category">Mental Health</span> · <time datetime="2024-12-05">Dec 5, 2024</time> · 4 min</p>
+            <h3>Why We Started a Playlist for the Luteal Phase</h3>
+            <p>Music and mood are linked in ways that are well-documented in research. When we curated our Spotify playlist, we weren't just picking songs. We were thinking about nervous system regulation.</p>
+            <p class="blog-card__author">P&amp;C Team</p>
+          </article>
+
+          <article class="blog-card" data-category="Campus Events" data-title="Campus Events Recap: PA HOSA State Conference" data-excerpt="We placed first in Mental Health Promotion among 3,000+ students statewide. Here's what our campaign looked like, what we learned, and what comes next.">
+            <p class="blog-card__meta"><span class="blog-card__category">Campus Events</span> · <time datetime="2024-11-22">Nov 22, 2024</time> · 5 min</p>
+            <h3>Campus Events Recap: PA HOSA State Conference</h3>
+            <p>We placed first in Mental Health Promotion among 3,000+ students statewide. Here's what our campaign looked like, what we learned, and what comes next.</p>
+            <p class="blog-card__author">P&amp;C Team</p>
+          </article>
+        </div>
+
+        <p class="blog__empty" id="blog-empty" hidden>No posts found. Try a different search or category.</p>
+      </div>
+    </section>
+
+    <!-- About Us: mission, chapters, and contact -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="section-inner">
+        <p class="eyebrow">Who We Are</p>
+        <h2 id="about-heading">About Us</h2>
+
+        <blockquote class="about__quote">
+          <p>"The purpose of this club is primarily to promote education on the relationship between mental health and the menstrual cycle."</p>
+        </blockquote>
+
+        <div class="about__copy">
+          <p>Psyche &amp; Cycle was founded by students who noticed a gap that felt both obvious and invisible: mental health and menstrual health were discussed in entirely separate rooms, despite their documented biological connection.</p>
+          <p>We are a student-led advocacy organization working to dismantle the stigma around both periods and mental illness. Through education, direct advocacy, and community events, we aim to give students the language and the support systems to understand their bodies and minds as one system.</p>
+          <p>We operate across three campuses and are always looking for people who want to help build something real.</p>
+        </div>
+
+        <div class="about__chapters">
+          <h3>Join a Chapter</h3>
+          <ul>
+            <li>Pitt Chapter — Active</li>
+            <li>Rutgers Chapter — Active</li>
+            <li>NJIT Chapter — Active</li>
+          </ul>
+          <p>Reach out to your campus lead or use the contact below to connect with the chapter near you.</p>
+        </div>
+
+        <div class="about__contact">
+          <h3>Get in Touch</h3>
+          <ul>
+            <li><strong>Email:</strong> <a href="mailto:laasyap11@gmail.com">laasyap11@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:4125572444">412-557-2444</a></li>
+            <li><strong>Address:</strong> 156-182 Warren St, Newark NJ 07103</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter: email signup with client-side validation -->
+    <section class="newsletter" id="newsletter" aria-labelledby="newsletter-heading">
+      <div class="section-inner newsletter__inner">
+        <p class="eyebrow">Stay Connected</p>
+        <h2 id="newsletter-heading">Join the Newsletter</h2>
+        <p class="newsletter__text">New blog posts, campus events, and resources. No spam, no filler. Just the things we actually think are worth your attention.</p>
+
+        <form class="newsletter__form" id="newsletter-form" novalidate>
+          <label class="visually-hidden" for="newsletter-email">Email address</label>
+          <input type="email" id="newsletter-email" name="email" placeholder="your@email.com" autocomplete="email" required aria-describedby="newsletter-note newsletter-message">
+          <button class="btn btn--primary" type="submit" id="newsletter-submit">Subscribe</button>
+        </form>
+        <p class="newsletter__note" id="newsletter-note">We respect your inbox. No spam, ever.</p>
+        <p class="newsletter__message" id="newsletter-message" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: brand, navigate links, connect links, copyright -->
+  <footer class="footer">
+    <div class="section-inner footer__inner">
+      <div class="footer__brand">
+        <p class="footer__logo">Psyche &amp; Cycle</p>
+        <p class="footer__tagline">Mind, Body, Cycle.</p>
+        <p>A student-led women's health non-profit.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <h3>Navigate</h3>
+        <ul>
+          <li><a href="#our-work">Our Work</a></li>
+          <li><a href="#disorders">Disorders</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+      <div class="footer__connect">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="mailto:laasyap11@gmail.com">Email Us</a></li>
+          <li><a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">Podcast</a></li>
+        </ul>
+      </div>
+      <div class="footer__legal">
+        <p>© 2025 Psyche &amp; Cycle. All rights reserved.</p>
+        <p class="footer__small">Built with intention.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
