@@ -14,7 +14,7 @@
   <!-- Navigation: sticky header with desktop links and mobile hamburger menu -->
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Primary">
-      <a class="nav__brand" href="#top">Psyche &amp; Cycle</a>
+      <a class="nav__brand" href="#top">Psyche <span class="nav__amp">&amp;</span> Cycle</a>
       <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
         <span class="nav__toggle-bar" aria-hidden="true"></span>
         <span class="nav__toggle-bar" aria-hidden="true"></span>
@@ -354,37 +354,60 @@
 
     <!-- About Us: mission, chapters, and contact -->
     <section class="about" id="about" aria-labelledby="about-heading">
-      <div class="section-inner">
-        <p class="eyebrow">Who We Are</p>
-        <h2 id="about-heading">About Us</h2>
+      <div class="section-inner about__layout">
+        <div class="about__main">
+          <p class="eyebrow">Who We Are</p>
+          <h2 id="about-heading">About Us</h2>
+          <div class="about__divider" aria-hidden="true"></div>
 
-        <blockquote class="about__quote">
-          <p>"The purpose of this club is primarily to promote education on the relationship between mental health and the menstrual cycle."</p>
-        </blockquote>
+          <blockquote class="about__quote">
+            <p>"The purpose of this club is primarily to promote education on the relationship between mental health and the menstrual cycle."</p>
+          </blockquote>
 
-        <div class="about__copy">
-          <p>Psyche &amp; Cycle was founded by students who noticed a gap that felt both obvious and invisible: mental health and menstrual health were discussed in entirely separate rooms, despite their documented biological connection.</p>
-          <p>We are a student-led advocacy organization working to dismantle the stigma around both periods and mental illness. Through education, direct advocacy, and community events, we aim to give students the language and the support systems to understand their bodies and minds as one system.</p>
-          <p>We operate across three campuses and are always looking for people who want to help build something real.</p>
+          <div class="about__copy">
+            <p>Psyche &amp; Cycle was founded by students who noticed a gap that felt both obvious and invisible: mental health and menstrual health were discussed in entirely separate rooms, despite their documented biological connection.</p>
+            <p>We are a student-led advocacy organization working to dismantle the stigma around both periods and mental illness. Through education, direct advocacy, and community events, we aim to give students the language and the support systems to understand their bodies and minds as one system.</p>
+            <p>We operate across three campuses and are always looking for people who want to help build something real.</p>
+          </div>
         </div>
 
-        <div class="about__chapters">
-          <h3>Join a Chapter</h3>
-          <ul>
-            <li>Pitt Chapter — Active</li>
-            <li>Rutgers Chapter — Active</li>
-            <li>NJIT Chapter — Active</li>
-          </ul>
-          <p>Reach out to your campus lead or use the contact below to connect with the chapter near you.</p>
-        </div>
+        <div class="about__aside">
+          <div class="about__card about__chapters">
+            <h3>Join a Chapter</h3>
+            <ul class="chapter-list">
+              <li>
+                <span class="chapter-list__name">Pitt Chapter</span>
+                <span class="chapter-list__badge">Active</span>
+              </li>
+              <li>
+                <span class="chapter-list__name">Rutgers Chapter</span>
+                <span class="chapter-list__badge">Active</span>
+              </li>
+              <li>
+                <span class="chapter-list__name">NJIT Chapter</span>
+                <span class="chapter-list__badge">Active</span>
+              </li>
+            </ul>
+            <p class="about__chapters-note">Reach out to your campus lead or use the contact below to connect with the chapter near you.</p>
+          </div>
 
-        <div class="about__contact">
-          <h3>Get in Touch</h3>
-          <ul>
-            <li><strong>Email:</strong> <a href="mailto:laasyap11@gmail.com">laasyap11@gmail.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:4125572444">412-557-2444</a></li>
-            <li><strong>Address:</strong> 156-182 Warren St, Newark NJ 07103</li>
-          </ul>
+          <div class="about__card about__contact">
+            <h3>Get in Touch</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-list__label">Email</span>
+                <a href="mailto:laasyap11@gmail.com">laasyap11@gmail.com</a>
+              </li>
+              <li>
+                <span class="contact-list__label">Phone</span>
+                <a href="tel:4125572444">412-557-2444</a>
+              </li>
+              <li>
+                <span class="contact-list__label">Address</span>
+                <span class="contact-list__value">156-182 Warren St, Newark NJ 07103</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
